@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Github Pull Request Template",
+  "description": "Fills in Github PR Template",
+  "version": "1.0",
+
+  "options_page": "views/options.html",
+
+  "background": {
+    "page": "views/background.html"
+  },
+
+  "permissions": [
+    "https://github.com/*"
+  ],
+
+  "content_scripts": [{
+    "matches": ["https://github.com/*"],
+
+    "js": ["constants.js",
+           "public/js/jquery-1.9.0.min.js",
+           "controllers/automate.js"],
+
+    "run_at": "document_end"
+  }],
+
+  "web_accessible_resources": ["public/js/jquery.min.map"]
+}

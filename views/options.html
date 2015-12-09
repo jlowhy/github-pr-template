@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Automation Options</title></head>
+<link rel="stylesheet" media="screen" href="../public/css/bootstrap.min.css">
+<body>
+<div class="container">
+
+  <form class="form-horizontal">
+    <div class="control-group">
+
+      <fieldset>
+        <legend>Pull Request Template</legend>
+        <label class="control-label">Pull Request Description</label>
+        <div class="controls">
+          <textarea class="span6" rows="10" id="pull-request-body" name="body"></textarea>
+        </div>
+      </fieldset>
+
+    </div>
+  </form>
+  <div id="status"></div>
+  <button class="btn btn-primary offset3 span3" id="save">Save</button>
+</div>
+
+<hr/>
+
+</body>
+<script src="../public/js/jquery-1.9.0.min.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../constants.js"></script>
+<script src="../controllers/options.js"></script>
+</html>
