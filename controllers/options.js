@@ -6,6 +6,8 @@ var Options = function Options() {
         var settings = res.content;
         var pullRequestBody = document.getElementById('pull-request-body');
         pullRequestBody.value = settings.pullRequestBody;
+        var regExp = document.getElementById('repository-reg-exp');
+        regExp.value = settings.repoRegExp;
       });
     },
 
@@ -13,6 +15,7 @@ var Options = function Options() {
       console.log('to save');
       var settings = {};
       settings.pullRequestBody = document.getElementById('pull-request-body').value;
+      settings.repoRegExp = document.getElementById('repository-reg-exp').value;
       var req = {
         'req': Constants.OPTIONS_SAVE,
         'settings': settings

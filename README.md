@@ -9,3 +9,4 @@ Chrome Extension that sets a template for Github's Pull Request Body
 # How to use
 - Make a new pull request and the pull request body should be auto populated automatically
 - To edit the template, go to the Extension Options
+- To restrict the behavior to certain repositories, edit the regular expression in Extension Options.

@@ -2,6 +2,7 @@ var Constants = function Constants() {
   return {
     'OPTIONS_SAVE': 'saveOptions',
     'OPTIONS_LOAD': 'loadOptions',
+    'SETTINGS_DEFAULT_REPO_REG_EXP': '.*',
     'SETTINGS_DEFAULT_AUTOFILL_PR_DESCRIPTION':
         "REFERENCE_URL\n\n" +
         "## Why is this change necessary?\n\n" +
